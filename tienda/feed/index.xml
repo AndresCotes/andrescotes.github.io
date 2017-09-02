@@ -8,8 +8,8 @@
 	>
 
 <channel>
-	<title></title>
-	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<title>Productos</title>
+	<atom:link href="/tienda/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Andres Cotes Developer Extensions</description>
 	<lastBuildDate>Sat, 02 Sep 2017 18:23:42 +0000</lastBuildDate>

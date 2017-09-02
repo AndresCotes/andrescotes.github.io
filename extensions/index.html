@@ -264,7 +264,7 @@ background-image: -webkit-gradient(linear,left top, left bottom,from(#e91e63),to
 <script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/extensions\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"http:\/\/andrescotes.github.local","is_cart":"","cart_redirect_after_add":"no"};
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/extensions\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"http:\/\/andrescotes.github.local\/carrito\/","is_cart":"","cart_redirect_after_add":"no"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=3.1.2'></script>
@@ -439,11 +439,16 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<div class="container">
 									<div class="hestia-bottom-footer-content">
 						<div class="hestia-bottom-footer-content">
-		<ul class="footer-menu pull-left"><li class="page_item page-item-5 current_page_item"><a href="/extensions/">Extensions</a></li>
+		<ul class="footer-menu pull-left"><li class="page_item page-item-86"><a href="/carrito/">Carrito</a></li>
+<li class="page_item page-item-5 current_page_item"><a href="/extensions/">Extensions</a></li>
+<li class="page_item page-item-87"><a href="/finalizar-compra/">Finalizar compra</a></li>
 <li class="page_item page-item-2"><a href="/">Home</a></li>
 <li class="page_item page-item-65"><a href="/horizontalscrollarrangementaddons/">HorizontalScrollArrangementAddons</a></li>
+<li class="page_item page-item-89"><a href="/label-addon/">Label Addon</a></li>
+<li class="page_item page-item-88"><a href="/mi-cuenta/">Mi cuenta</a></li>
 <li class="page_item page-item-27"><a href="/sidebar-extension/">Sidebar Extension</a></li>
 <li class="page_item page-item-8"><a href="/snippets/">Snippets</a></li>
+<li class="page_item page-item-85"><a href="/tienda/">Tienda</a></li>
 <li class="page_item page-item-10"><a href="/tutorials/">Tutorials</a></li>
 <li class="page_item page-item-56"><a href="/verticalscrollarrangementaddons/">VerticalScrollArrangementAddons</a></li>
 <li class="page_item page-item-17"><a href="/you-tube-extension/">YouTube Extension</a></li>
@@ -458,7 +463,17 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			</div>
 			</div>
 	</div>
-<script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+        <!-- 
+            Lockers: user tracker for visibility filters
+            OnePress, bizpanda.com
+        -->
+        <script>
+            window.__bp_session_timeout = '900';
+            window.__bp_session_freezing = 0;
+            !function(){window.bizpanda||(window.bizpanda={}),window.bizpanda.bp_can_store_localy=function(){return!1},window.bizpanda.bp_ut_get_cookie=function(e){for(var n=e+"=",i=document.cookie.split(";"),o=0;o<i.length;o++){for(var t=i[o];" "==t.charAt(0);)t=t.substring(1);if(0==t.indexOf(n))return decodeURIComponent(t.substring(n.length,t.length))}return!1},window.bizpanda.bp_ut_set_cookie=function(e,n,i){var o=new Date;o.setTime(o.getTime()+24*i*60*60*1e3);var t="expires="+o.toUTCString();document.cookie=e+"="+encodeURIComponent(n)+"; "+t+"; path=/"},window.bizpanda.bp_ut_get_obj=function(e){var n=null;return(n=window.bizpanda.bp_can_store_localy()?window.localStorage.getItem("bp_ut_session"):window.bizpanda.bp_ut_get_cookie("bp_ut_session"))?(n=n.replace(/\-c\-/g,","),n=n.replace(/\-q\-/g,'"'),n=JSON.parse(n),n.started+1e3*e<(new Date).getTime()&&(n=null),n):!1},window.bizpanda.bp_ut_set_obj=function(e,n){e.started&&window.__bp_session_freezing||(e.started=(new Date).getTime());var e=JSON.stringify(e);e&&(e=e.replace(/\"/g,"-q-"),e=e.replace(/\,/g,"-c-")),window.bizpanda.bp_can_store_localy()?window.localStorage.setItem("bp_ut_session",e):window.bizpanda.bp_ut_set_cookie("bp_ut_session",e,5e3)},window.bizpanda.bp_ut_count_pageview=function(){var e=window.bizpanda.bp_ut_get_obj(window.__bp_session_timeout);e||(e={}),e.pageviews||(e.pageviews=0),0===e.pageviews&&(e.referrer=document.referrer,e.landingPage=window.location.href,e.pageviews=0),e.pageviews++,window.bizpanda.bp_ut_set_obj(e)},window.bizpanda.bp_ut_count_locker_pageview=function(){var e=window.bizpanda.bp_ut_get_obj(window.__bp_timeout);e||(e={}),e.lockerPageviews||(e.lockerPageviews=0),e.lockerPageviews++,window.bizpanda.bp_ut_set_obj(e)},window.bizpanda.bp_ut_count_pageview()}();
+        </script>
+        <!-- / -->
+            <script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
 <script type='text/javascript' src='/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
@@ -480,7 +495,7 @@ var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax
 <script type='text/javascript' src='/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var hestiaViewcart = {"view_cart_label":"Ver carrito","view_cart_link":"http:\/\/andrescotes.github.local"};
+var hestiaViewcart = {"view_cart_label":"Ver carrito","view_cart_link":"http:\/\/andrescotes.github.local\/carrito\/"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='/wp-content/themes/hestia/assets/js/scripts.js?ver=1.1.42'></script>
