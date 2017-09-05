@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:atom="http://www.w3.org/2005/Atom"
 	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 	>
+
 <channel>
-	<title>Comentarios para </title>
-	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<title>Productos</title>
+	<atom:link href="/tienda/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Andres Cotes Developer Extensions</description>
-<<<<<<< HEAD
-	<lastBuildDate>Tue, 05 Sep 2017 05:06:41 +0000</lastBuildDate>
-=======
-	<lastBuildDate>Sat, 02 Sep 2017 20:48:28 +0000</lastBuildDate>
->>>>>>> parent of 089283c... Revert "label añadido"
+	<lastBuildDate>Sat, 02 Sep 2017 20:44:41 +0000</lastBuildDate>
+	<language>es-ES</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.8.1</generator>

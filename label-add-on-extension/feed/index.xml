@@ -10,7 +10,11 @@
 	<atom:link href="/label-add-on-extension/feed/" rel="self" type="application/rss+xml" />
 	<link>/label-add-on-extension/</link>
 	<description>Andres Cotes Developer Extensions</description>
+<<<<<<< HEAD:label-add-on-extension/feed/index.xml
 	<lastBuildDate>Tue, 05 Sep 2017 05:07:08 +0000</lastBuildDate>
+=======
+	<lastBuildDate>Sat, 02 Sep 2017 20:48:30 +0000</lastBuildDate>
+>>>>>>> parent of 089283c... Revert "label añadido":sample-page/feed/index.xml
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.8.1</generator>
