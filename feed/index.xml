@@ -9,8 +9,8 @@
 
 <channel>
 	<title></title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../index.html</link>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Andres Cotes Developer Extensions</description>
 	<lastBuildDate>Tue, 05 Sep 2017 04:33:55 +0000</lastBuildDate>
 	<language>es-ES</language>
@@ -19,18 +19,18 @@
 	<generator>https://wordpress.org/?v=4.8.1</generator>
 	<item>
 		<title>Label Add-on extension</title>
-		<link>./../label-add-on-extension/index.html</link>
-		<comments>./../label-add-on-extension/index.html#respond</comments>
+		<link>/label-add-on-extension/</link>
+		<comments>/label-add-on-extension/#respond</comments>
 		<pubDate>Sat, 02 Sep 2017 23:20:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">./../index.html?p=122</guid>
+		<guid isPermaLink="false">/?p=122</guid>
 		<description><![CDATA[Añadimos una nueva extensión https://andrescotes.github.io/label-addon/]]></description>
 				<content:encoded><![CDATA[<p>Añadimos una nueva extensión</p>
 <p>https://andrescotes.github.io/label-addon/</p>
 ]]></content:encoded>
-			<wfw:commentRss>./../label-add-on-extension/feed/index.html</wfw:commentRss>
+			<wfw:commentRss>/label-add-on-extension/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
