@@ -9,28 +9,28 @@
 
 <channel>
 	<title>admin</title>
-	<atom:link href="/author/admin/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="https://andrescotes.github.io/author/admin/feed/" rel="self" type="application/rss+xml" />
+	<link>https://andrescotes.github.io/</link>
 	<description>Andres Cotes Developer Extensions</description>
-	<lastBuildDate>Tue, 05 Sep 2017 04:33:55 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 05 Sep 2017 05:13:51 +0000</lastBuildDate>
 	<language>es-ES</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.8.1</generator>
 	<item>
 		<title>Label Add-on extension</title>
-		<link>/label-add-on-extension/</link>
-		<comments>/label-add-on-extension/#respond</comments>
+		<link>https://andrescotes.github.io/label-add-on-extension/</link>
+		<comments>https://andrescotes.github.io/label-add-on-extension/#respond</comments>
 		<pubDate>Sat, 02 Sep 2017 23:20:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 				<category><![CDATA[Uncategorized]]></category>
 
-		<guid isPermaLink="false">/?p=122</guid>
+		<guid isPermaLink="false">https://andrescotes.github.io/?p=122</guid>
 		<description><![CDATA[Añadimos una nueva extensión https://andrescotes.github.io/label-addon/]]></description>
 				<content:encoded><![CDATA[<p>Añadimos una nueva extensión</p>
 <p>https://andrescotes.github.io/label-addon/</p>
 ]]></content:encoded>
-			<wfw:commentRss>/label-add-on-extension/feed/</wfw:commentRss>
+			<wfw:commentRss>https://andrescotes.github.io/label-add-on-extension/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
