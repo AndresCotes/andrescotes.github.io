@@ -318,17 +318,21 @@ jQuery(document).ready(function ($) {
 
 
     function fixHeaderPadding() {
-        if ($(window).width() > 992) {
+        if ($(window).width() > 768) {
             var navbar_height = $('.navbar-fixed-top').outerHeight();
             var beaver_offset = 40;
             $('.pagebuilder-section').css('padding-top', navbar_height);
             $('.fl-builder-edit .pagebuilder-section').css('padding-top', navbar_height + beaver_offset);
             $('.page-header.header-small .container').css('padding-top', navbar_height + 100);
+
             var headerHeight = $('.single-product .page-header.header-small').height();
             var offset = headerHeight + 100;
             $('.single-product .page-header.header-small .container').css('padding-top', headerHeight - offset);
+
             var marginOffset = headerHeight - navbar_height - 172;
             $('.woocommerce.single-product .blog-post .col-md-12 > div[id^=product].product').css('margin-top', -marginOffset );
+        } else {
+            $('.page-header.header-small .container').removeAttr( 'style' );
         }
     }
 
