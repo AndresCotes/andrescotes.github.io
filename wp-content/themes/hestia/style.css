@@ -5,7 +5,7 @@ Theme URI:      https://themeisle.com/themes/hestia/
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
 Description:    Hestia is a modern WordPress theme for professionals. It fits creative business, small businesses (restaurants, wedding planners, sport/medical shops), startups, corporate businesses, online agencies and firms, portfolios, ecommerce (WooCommerce), and freelancers. It has a multipurpose one-page design, widgetized footer, blog/news page and a clean look, is compatible with: Flat Parallax Slider, Photo Gallery, Travel Map and Elementor Page Builder . The theme is responsive, WPML, Retina ready, SEO friendly, and uses Material Kit for design.
-Version:        1.1.42
+Version:        1.1.46
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    hestia
@@ -66,6 +66,94 @@ input[type="button"],
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:focus,
+.btn.disabled.focus,
+.btn.disabled:active,
+.btn.disabled.active,
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:focus,
+.btn.focus:disabled,
+.btn:disabled:active,
+.btn.active:disabled,
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled].focus,
+.btn[disabled]:active,
+.btn[disabled].active,
+fieldset[disabled] .btn,
+fieldset[disabled] .btn:hover,
+fieldset[disabled] .btn:focus,
+fieldset[disabled] .btn.focus,
+fieldset[disabled] .btn:active,
+fieldset[disabled] .btn.active, .btn.btn-simple,
+.btn.btn-default.btn-simple, .btn.btn-primary.btn-simple, .btn.btn-danger.btn-simple, .btn.btn-rose.btn-simple, .btn.btn-white.btn-simple, .navbar button.navbar-toggle, .navbar button.navbar-toggle:hover, .btn.btn-facebook.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-facebook.btn-simple, .btn.btn-twitter.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-twitter.btn-simple, .btn.btn-pinterest.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-pinterest.btn-simple, .btn.btn-google.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-google.btn-simple, .btn.btn-linkedin.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-linkedin.btn-simple, .btn.btn-dribbble.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-dribbble.btn-simple, .btn.btn-github.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-github.btn-simple, .btn.btn-youtube.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-youtube.btn-simple, .btn.btn-instagram.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-instagram.btn-simple, .btn.btn-reddit.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-reddit.btn-simple, .btn.btn-tumblr.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-tumblr.btn-simple, .btn.btn-behance.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-behance.btn-simple, .btn.btn-snapchat.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-snapchat.btn-simple, .btn.btn-deviantart.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-deviantart.btn-simple, .btn.btn-vimeo.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-vimeo.btn-simple, .woocommerce.single-product .page-header .container .cart-contents-content.btn-white.btn-simple:focus, .woocommerce.single-product .page-header .container .cart-contents-content.btn-white.btn-simple:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.form-control,
+.form-group .form-control,
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea, .woocommerce div.product form.cart .variations select, .woocommerce .woocommerce-ordering select, .woocommerce-cart .shop_table .actions .coupon .input-text, .woocommerce-checkout #customer_details select,
+.woocommerce-checkout #order_review select,
+.woocommerce-checkout .woocomerce-form select {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
+  background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
+  float: none;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center bottom, center -webkit-calc(100% - 1px);
+  background-position: center bottom, center calc(100% - 1px);
+  background-size: 0 2px, 100% 1px;
+  font-weight: 400;
+  -webkit-transition: background 0s ease-out;
+  transition: background 0s ease-out;
+}
+
+.form-group.is-focused .form-control {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
+  background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
+  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
+  outline: none;
+  background-size: 100% 2px,100% 1px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.form-control,
+.form-group .form-control,
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea, .woocommerce div.product form.cart .variations select, .woocommerce .woocommerce-ordering select, .woocommerce-cart .shop_table .actions .coupon .input-text, .woocommerce-checkout #customer_details select,
+.woocommerce-checkout #order_review select,
+.woocommerce-checkout .woocomerce-form select, .form-group.is-focused .form-control, .form-group.is-focused select.form-control, .form-group.has-warning .form-control, .form-group.has-error .form-control, .form-group.has-success .form-control, .form-group.has-info .form-control, select.form-control {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 /*--------------------------------------------------------------
@@ -604,6 +692,9 @@ input#searchsubmit,
   font-size: 20px;
   line-height: 20px;
 }
+.btn.btn-just-icon:hover {
+  box-shadow: none;
+}
 .btn.btn-just-icon i {
   width: 20px;
 }
@@ -1079,51 +1170,6 @@ input#searchsubmit,
   background-color: transparent;
 }
 
-.btn.disabled,
-.btn.disabled:hover,
-.btn.disabled:focus,
-.btn.disabled.focus,
-.btn.disabled:active,
-.btn.disabled.active,
-.btn:disabled,
-.btn:disabled:hover,
-.btn:disabled:focus,
-.btn.focus:disabled,
-.btn:disabled:active,
-.btn.active:disabled,
-.btn[disabled],
-.btn[disabled]:hover,
-.btn[disabled]:focus,
-.btn[disabled].focus,
-.btn[disabled]:active,
-.btn[disabled].active,
-fieldset[disabled] .btn,
-fieldset[disabled] .btn:hover,
-fieldset[disabled] .btn:focus,
-fieldset[disabled] .btn.focus,
-fieldset[disabled] .btn:active,
-fieldset[disabled] .btn.active, .btn.btn-simple,
-.btn.btn-default.btn-simple, .btn.btn-primary.btn-simple, .btn.btn-danger.btn-simple, .btn.btn-rose.btn-simple, .btn.btn-white.btn-simple, .navbar button.navbar-toggle, .navbar button.navbar-toggle:hover, .btn.btn-facebook.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-facebook.btn-simple, .btn.btn-twitter.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-twitter.btn-simple, .btn.btn-pinterest.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-pinterest.btn-simple, .btn.btn-google.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-google.btn-simple, .btn.btn-linkedin.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-linkedin.btn-simple, .btn.btn-dribbble.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-dribbble.btn-simple, .btn.btn-github.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-github.btn-simple, .btn.btn-youtube.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-youtube.btn-simple, .btn.btn-instagram.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-instagram.btn-simple, .btn.btn-reddit.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-reddit.btn-simple, .btn.btn-tumblr.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-tumblr.btn-simple, .btn.btn-behance.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-behance.btn-simple, .btn.btn-snapchat.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-snapchat.btn-simple, .btn.btn-deviantart.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-deviantart.btn-simple, .btn.btn-vimeo.btn-simple,
-.navbar .navbar-nav > li > a.btn.btn-vimeo.btn-simple, .woocommerce.single-product .page-header .container .cart-contents-content.btn-white.btn-simple:focus, .woocommerce.single-product .page-header .container .cart-contents-content.btn-white.btn-simple:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
 /*--------------------------------------------------------------
 ## Forms
 --------------------------------------------------------------*/
@@ -1419,49 +1465,6 @@ select .form-group.is-focused select.form-control[multiple] {
   top: 4px;
 }
 
-.form-control,
-.form-group .form-control,
-.woocommerce form .form-row input.input-text,
-.woocommerce form .form-row textarea, .woocommerce div.product form.cart .variations select, .woocommerce .woocommerce-ordering select, .woocommerce-cart .shop_table .actions .coupon .input-text, .woocommerce-checkout #customer_details select,
-.woocommerce-checkout #order_review select,
-.woocommerce-checkout .woocomerce-form select {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
-  background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
-  float: none;
-  border: 0;
-  border-radius: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center bottom, center -webkit-calc(100% - 1px);
-  background-position: center bottom, center calc(100% - 1px);
-  background-size: 0 2px, 100% 1px;
-  font-weight: 400;
-  -webkit-transition: background 0s ease-out;
-  transition: background 0s ease-out;
-}
-
-.form-group.is-focused .form-control {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9c27b0), to(#9c27b0)), -webkit-gradient(linear, left top, left bottom, from(#d2d2d2), to(#d2d2d2));
-  background-image: -webkit-linear-gradient(#9c27b0, #9c27b0), -webkit-linear-gradient(#d2d2d2, #d2d2d2);
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#d2d2d2, #d2d2d2);
-  outline: none;
-  background-size: 100% 2px,100% 1px;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-
-.form-group.is-focused select.form-control, .form-group.has-warning .form-control, .form-group.has-error .form-control, .form-group.has-success .form-control, .form-group.has-info .form-control, select.form-control, .form-control,
-.form-group .form-control,
-.woocommerce form .form-row input.input-text,
-.woocommerce form .form-row textarea, .woocommerce div.product form.cart .variations select, .woocommerce .woocommerce-ordering select, .woocommerce-cart .shop_table .actions .coupon .input-text, .woocommerce-checkout #customer_details select,
-.woocommerce-checkout #order_review select,
-.woocommerce-checkout .woocomerce-form select, .form-group.is-focused .form-control {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
 /*--------------------------------------------------------------
 ## Navigation
 --------------------------------------------------------------*/
@@ -1707,7 +1710,7 @@ body:not(.home) .navbar-default .navbar-nav > .active > a, body:not(.home) .navb
   margin-left: -1px;
 }
 .dropdown-submenu:hover > .dropdown-menu {
-  display: block !important;
+  display: table !important;
 }
 .dropdown-submenu:hover > .dropdown-toggle .caret {
   border-left: 4px dashed;
@@ -1720,7 +1723,6 @@ body:not(.home) .navbar-default .navbar-nav > .active > a, body:not(.home) .navb
 }
 .navbar.hestia_center .navbar-collapse {
   text-align: center;
-  display: block !important;
 }
 .navbar.hestia_center .navbar-header {
   display: block !important;
@@ -1975,9 +1977,6 @@ body:not(.home) .navbar-default .navbar-nav > .active > a, body:not(.home) .navb
   display: none;
 }
 
-.navbar-transparent .widget a {
-  color: #fff;
-}
 .navbar-transparent .widget .btn:hover a {
   color: #fff;
 }
@@ -2489,6 +2488,9 @@ table > tbody > tr:last-child {
   bottom: 15px;
   font-size: 50px;
 }
+.carousel .buttons .btn-left + .btn-right {
+  margin-left: 30px;
+}
 
 /*--------------------------------------------------------------
 ## Generic
@@ -2592,6 +2594,36 @@ table > tbody > tr:last-child {
   padding: 100px 0 70px;
 }
 
+@media (min-width: 992px) {
+  .home .hestia-features .row, .home .hestia-work .row, .home .hestia-team .row, .home .hestia-testimonials .row, .home #blog.hestia-blogs .row {
+    text-align: center;
+  }
+  .home .feature-box, .home .hestia-work .col-md-4, .home .hestia-testimonials .col-md-4, .home .hestia-work .col-md-6, .home .hestia-team .col-md-6, .home #blog.hestia-blogs .hestia-blog-item {
+    display: inline-block;
+    float: none !important;
+    margin-right: -4px;
+    margin-left: -4px;
+    vertical-align: top;
+  }
+  .home .hestia-blog-item {
+    text-align: left;
+  }
+  .home .portfolio-item a {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .home section.products .col-md-3.shop-item {
+    display: inline-block;
+    float: none !important;
+    margin-right: -3px;
+    margin-left: -2px;
+  }
+  .home section.products .row {
+    text-align: center;
+  }
+}
 /*--------------------------------------------------------------
 ## About Section
 --------------------------------------------------------------*/
@@ -2771,6 +2803,14 @@ table > tbody > tr:last-child {
 .hestia-features .info p, .features .hestia-info p,
 .features .info p {
   font-size: 16px;
+}
+.hestia-features .feature-box .card, .features .feature-box .card {
+  width: auto;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hestia-features .feature-box img, .features .feature-box img {
+  max-width: 150px;
 }
 
 .hestia-info, .info {
@@ -3119,11 +3159,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="facebook.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="facebook.com"]:hover:before {
   color: #3b5998;
+}
+
+.footer-black .footer-menu li a[href*="facebook.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="twitter.com"] {
@@ -3134,11 +3178,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="twitter.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="twitter.com"]:hover:before {
   color: #55acee;
+}
+
+.footer-black .footer-menu li a[href*="twitter.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="pinterest.com"] {
@@ -3149,11 +3197,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="pinterest.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="pinterest.com"]:hover:before {
   color: #cc2127;
+}
+
+.footer-black .footer-menu li a[href*="pinterest.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="google.com"] {
@@ -3164,11 +3216,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="google.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="google.com"]:hover:before {
   color: #dd4b39;
+}
+
+.footer-black .footer-menu li a[href*="google.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="linkedin.com"] {
@@ -3179,11 +3235,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="linkedin.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="linkedin.com"]:hover:before {
   color: #0976b4;
+}
+
+.footer-black .footer-menu li a[href*="linkedin.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="dribbble.com"] {
@@ -3194,11 +3254,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="dribbble.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="dribbble.com"]:hover:before {
   color: #ea4c89;
+}
+
+.footer-black .footer-menu li a[href*="dribbble.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="github.com"] {
@@ -3209,11 +3273,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="github.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="github.com"]:hover:before {
   color: #333;
+}
+
+.footer-black .footer-menu li a[href*="github.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="youtube.com"] {
@@ -3224,11 +3292,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="youtube.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="youtube.com"]:hover:before {
   color: #e52d27;
+}
+
+.footer-black .footer-menu li a[href*="youtube.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="instagram.com"] {
@@ -3239,11 +3311,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="instagram.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="instagram.com"]:hover:before {
   color: #125688;
+}
+
+.footer-black .footer-menu li a[href*="instagram.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="reddit.com"] {
@@ -3254,11 +3330,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="reddit.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="reddit.com"]:hover:before {
   color: #ff4500;
+}
+
+.footer-black .footer-menu li a[href*="reddit.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="tumblr.com"] {
@@ -3269,11 +3349,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="tumblr.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="tumblr.com"]:hover:before {
   color: #35465c;
+}
+
+.footer-black .footer-menu li a[href*="tumblr.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="behance.com"] {
@@ -3284,11 +3368,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="behance.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="behance.com"]:hover:before {
   color: #1769ff;
+}
+
+.footer-black .footer-menu li a[href*="behance.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="snapchat.com"] {
@@ -3299,11 +3387,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="snapchat.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="snapchat.com"]:hover:before {
   color: #fffc00;
+}
+
+.footer-black .footer-menu li a[href*="snapchat.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="deviantart.com"] {
@@ -3314,11 +3406,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="deviantart.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="deviantart.com"]:hover:before {
   color: #05cc47;
+}
+
+.footer-black .footer-menu li a[href*="deviantart.com"]:before {
+  color: #fff;
 }
 
 .footer-big .footer-menu li a[href*="vimeo.com"] {
@@ -3329,11 +3425,15 @@ table > tbody > tr:last-child {
 .footer-big .footer-menu li a[href*="vimeo.com"]:before {
   content: "";
   font-family: 'FontAwesome';
-  color: #fff;
+  color: #3c4858;
   font-size: 16px;
 }
 .footer-big .footer-menu li a[href*="vimeo.com"]:hover:before {
   color: #1ab7ea;
+}
+
+.footer-black .footer-menu li a[href*="vimeo.com"]:before {
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -3572,7 +3672,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="facebook.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="facebook.com"]:before {
@@ -3583,7 +3682,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="twitter.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="twitter.com"]:before {
@@ -3594,7 +3692,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="pinterest.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="pinterest.com"]:before {
@@ -3605,7 +3702,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="google.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="google.com"]:before {
@@ -3616,7 +3712,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="linkedin.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="linkedin.com"]:before {
@@ -3627,7 +3722,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="dribbble.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="dribbble.com"]:before {
@@ -3638,7 +3732,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="github.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="github.com"]:before {
@@ -3649,7 +3742,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="youtube.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="youtube.com"]:before {
@@ -3660,7 +3752,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="instagram.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="instagram.com"]:before {
@@ -3671,7 +3762,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="reddit.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="reddit.com"]:before {
@@ -3682,7 +3772,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="tumblr.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="tumblr.com"]:before {
@@ -3693,7 +3782,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="behance.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="behance.com"]:before {
@@ -3704,7 +3792,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="snapchat.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="snapchat.com"]:before {
@@ -3715,7 +3802,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="deviantart.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="deviantart.com"]:before {
@@ -3726,7 +3812,6 @@ table > tbody > tr:last-child {
 }
 
 .hestia-top-bar li a[href*="vimeo.com"] {
-  color: transparent;
   font-size: 0;
 }
 .hestia-top-bar li a[href*="vimeo.com"]:before {
@@ -4120,6 +4205,10 @@ aside .widget a {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 53.2px;
   line-height: 79.8px;
+}
+
+.boxed-layout-header {
+  padding-bottom: 60px;
 }
 
 .woocommerce .page-header.header-small .hestia-title,
@@ -5021,8 +5110,8 @@ aside .widget a {
   box-shadow: 0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
 }
 
-.boxed-layout-header {
-  padding-bottom: 60px;
+.woocommerce div.product .woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
+  clear: none;
 }
 
 /*--------------------------------------------------------------
@@ -5754,6 +5843,10 @@ div[id^=woocommerce_layered_nav_filters].widget li a:before {
     right: 30px;
   }
 
+  .single-product .page-header .container .row .cart-contents-content {
+    right: 15px;
+  }
+
   /* product list */
   .woocommerce ul.products li.product {
     float: left;
@@ -5931,6 +6024,10 @@ div[id^=woocommerce_layered_nav_filters].widget li a:before {
     right: 10px;
   }
 
+  .single-product .page-header .container .row .cart-contents-content {
+    right: 15px;
+  }
+
   /*My Account Styling*/
   .woocommerce-account .woocommerce-MyAccount-navigation ul li {
     display: inline-block;
@@ -5957,7 +6054,7 @@ div[id^=woocommerce_layered_nav_filters].widget li a:before {
   }
 
   .woocommerce.single-product .product {
-    padding: 30px 15px 0;
+    padding: 30px 0 0;
   }
   .woocommerce.single-product .product .images,
   .woocommerce.single-product .product .summary {
@@ -5969,8 +6066,12 @@ div[id^=woocommerce_layered_nav_filters].widget li a:before {
   .woocommerce.single-product .product span.onsale {
     left: 15px;
   }
+  .woocommerce.single-product .blog-post .col-md-12 {
+    padding: 0;
+  }
   .woocommerce.single-product .blog-post .col-md-12 > div[id^=product].product {
     padding: 30px 15px;
+    border-radius: 0;
   }
 
   .woocommerce.single-product.single .section {
@@ -6099,6 +6200,36 @@ li.yith_magnifier_thumbnail a img {
 # Responsive
 --------------------------------------------------------------*/
 @media (max-width: 1199px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   .hestia-features .row,
   .hestia-about .row,
   .products .row,
@@ -6208,7 +6339,8 @@ li.yith_magnifier_thumbnail a img {
   }
 
   .alternative-blog-row div:last-child {
-    display: table-header-group;
+    padding: 0;
+    display: block;
   }
 
   .hestia-features .row,
@@ -6225,7 +6357,7 @@ li.yith_magnifier_thumbnail a img {
   .testimonials .row,
   section.blogs .row,
   .contactus .row {
-    padding: 0 25px;
+    padding: 0 10px;
   }
 
   .contactus .contact_submit_wrap {
@@ -6245,14 +6377,21 @@ li.yith_magnifier_thumbnail a img {
     text-align: center;
   }
 
-  .blog .hestia-blogs {
-    padding-top: 30px;
+  .blog .hestia-blogs,
+  .archive .hestia-blogs {
+    padding-top: 0;
   }
-  .blog .hestia-blogs .card-blog .card-image {
+  .blog .hestia-blogs .card-blog .card-image,
+  .archive .hestia-blogs .card-blog .card-image {
     margin-bottom: 30px;
   }
-  .blog #authors-on-blog {
+  .blog #authors-on-blog,
+  .archive #authors-on-blog {
     padding-bottom: 40px;
+  }
+
+  .home .hestia-blogs {
+    padding: 30px 0 65px;
   }
 
   .single.single-post .section-blog-info .card-profile .card-title,
@@ -6269,8 +6408,13 @@ li.yith_magnifier_thumbnail a img {
   }
 
   .row-sidebar-toggle {
-    margin: 0 15px;
+    margin: 30px 15px 0;
     text-align: right;
+  }
+
+  .page .row-sidebar-toggle {
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .blog-sidebar-wrapper,
@@ -6302,6 +6446,12 @@ li.yith_magnifier_thumbnail a img {
 
   .archive.woocommerce .hestia-sidebar-open {
     margin-bottom: 30px;
+  }
+
+  .shop-sidebar.card.card-raised {
+    box-shadow: none;
+    margin: 0 15px;
+    padding: 0;
   }
 
   .hestia-top-bar .container {
@@ -6372,7 +6522,7 @@ li.yith_magnifier_thumbnail a img {
   .blog-sidebar-wrapper,
   .shop-sidebar-wrapper {
     float: left;
-    overflow: none;
+    overflow: hidden;
     position: static;
     padding: 0;
     background: transparent;
@@ -6502,6 +6652,46 @@ li.yith_magnifier_thumbnail a img {
   }
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h6 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .carousel h1.hestia-title,
+  .carousel h2.title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .carousel span.sub-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .navbar .navbar-toggle {
     margin-right: 0;
   }
@@ -6535,6 +6725,8 @@ li.yith_magnifier_thumbnail a img {
     box-shadow: none;
   }
   .navbar .container {
+    display: table;
+    min-height: 70px;
     width: 100%;
   }
   .navbar.navbar-fixed-top .navbar-collapse, .navbar.navbar-fixed-top.navbar-not-transparent .navbar-collapse {
@@ -6545,7 +6737,10 @@ li.yith_magnifier_thumbnail a img {
     z-index: 9999;
     background: #fff;
     width: 100%;
+    left: 0;
     top: 0;
+    margin-left: 0;
+    margin-right: 0;
     -webkit-overflow-scrolling: auto;
   }
   .navbar.navbar-with-topbar.navbar-fixed-top .navbar-collapse {
@@ -6760,6 +6955,11 @@ li.yith_magnifier_thumbnail a img {
   .navbar .dropdown-menu i, .navbar.navbar-not-transparent .dropdown-menu i {
     opacity: 1;
   }
+  .navbar .navbar-header {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
 
   .navbar-default .navbar-nav .open .dropdown-menu {
     background-color: #f3f3f3;
@@ -6855,6 +7055,7 @@ li.yith_magnifier_thumbnail a img {
   .carousel h2.title,
   .carousel h1.hestia-title {
     font-size: 42px;
+    line-height: 48px;
   }
 
   .page-header.header-small .title,
@@ -6890,8 +7091,9 @@ li.yith_magnifier_thumbnail a img {
   }
 
   .main-raised {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    border-radius: 0;
   }
 
   hr {
@@ -6899,7 +7101,7 @@ li.yith_magnifier_thumbnail a img {
   }
 
   .hestia-about {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .hestia-about h2 {
     margin-top: 0;
@@ -6955,6 +7157,14 @@ li.yith_magnifier_thumbnail a img {
     margin-top: 0;
   }
 
+  .single-post .header-with-topbar .page-header.header-small .container,
+  .page .header-with-topbar .page-header.header-small .container,
+  .blog .header-with-topbar .page-header.header-small .container,
+  .archive .header-with-topbar .page-header.header-small .container,
+  .category .header-with-topbar .page-header.header-small .container {
+    padding: 200px 15px 90px;
+  }
+
   .hestia-top-bar {
     overflow: hidden;
   }
@@ -6971,6 +7181,10 @@ li.yith_magnifier_thumbnail a img {
   }
   .hestia-top-bar .widget.widget_shopping_cart {
     display: none;
+  }
+
+  .admin-bar header.header {
+    margin-top: -46px;
   }
 }
 @media (max-width: 480px) {
